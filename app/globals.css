@@ -24,3 +24,69 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 背景渐变动画 */
+@keyframes firstAnimation {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes secondAnimation {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(20px, -10px) scale(1.1) rotate(30deg); }
+  66% { transform: translate(-10px, 10px) scale(0.9) rotate(-30deg); }
+}
+
+@keyframes thirdAnimation {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(-30px, 30px) scale(1.1) rotate(-20deg); }
+  66% { transform: translate(20px, -20px) scale(0.9) rotate(20deg); }
+}
+
+@keyframes fourthAnimation {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(10px, 20px) scale(1.1) rotate(40deg); }
+  66% { transform: translate(-10px, -20px) scale(0.9) rotate(-40deg); }
+}
+
+@keyframes fifthAnimation {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(-20px, -10px) scale(1.1) rotate(-15deg); }
+  66% { transform: translate(20px, 10px) scale(0.9) rotate(15deg); }
+}
+
+.animate-first {
+  animation: firstAnimation 18s ease-in-out infinite;
+}
+
+.animate-second {
+  animation: secondAnimation 12s ease-in-out infinite;
+}
+
+.animate-third {
+  animation: thirdAnimation 15s ease-in-out infinite;
+}
+
+.animate-fourth {
+  animation: fourthAnimation 20s ease-in-out infinite;
+}
+
+.animate-fifth {
+  animation: fifthAnimation 22s ease-in-out infinite;
+}
+
+/* 浮动动画 */
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
